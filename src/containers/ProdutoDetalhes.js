@@ -21,7 +21,7 @@ const ProdutoDetalhes = () => {
 
   useEffect(() => {
     if (productId && productId !== "") {
-      fetchProductDetail(productId);
+      fetchProdutoDetalhes(productId);
     }
     return () => {
       dispatch(removeSelectedProduct());
@@ -53,4 +53,4 @@ const ProdutoDetalhes = () => {
   );
 };
 
-export default ProductDetails;
+export default ProdutoDetalhes;
