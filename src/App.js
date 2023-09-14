@@ -13,7 +13,7 @@ function App() {
         <div id='slide1'>
           </div>
         <Routes>
-          <Route path="/" element={<ProdutoInicial />} />
+          <Route path="/" element={<PaginaInicial />} />
           <Route path="/product/:productId" element={<ProdutoDetalhes />} />
         </Routes>
       </Router>
