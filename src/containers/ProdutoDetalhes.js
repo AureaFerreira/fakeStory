@@ -5,13 +5,13 @@ import { useDispatch, useSelector } from "react-redux";
 import { selectedProduct, removeSelectedProduct } from "../redux/actions/productsActions";
 import { Button } from 'antd';
 
-const ProductDetails = () => {
+const ProdutoDetalhes = () => {
   const { productId } = useParams();
   let product = useSelector((state) => state.product);
   const { image, title, price, category, description } = product;
   const dispatch = useDispatch();
 
-  const fetchProductDetail = (id) => {
+  const fetchProdutoDetalhes = (id) => {
     axios
       .get(`https://fakestoreapi.com/products/${id}`)
       .then((response) => {
